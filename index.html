@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <script>
+     
+//  async function myFunction() {
+    //return "Hello";
+//}
+
+// setTimeout(async()=>{
+//     const a=await myFunction();
+//     console.log("Yes");
+// },2000)
+
+
+//----------------------------------------------------------------------//
+
+
+
+
+
+
+
+
+// const datas=[
+//     {name:"Bilawal",Professional:"Software Engineer"},
+
+//     {name:"Haider",Professional:"Software Engineer"}
+// ]
+
+
+
+// const getData=(datas)=>{
+//     let out="";
+//     setTimeout(()=>{
+    
+//  datas.forEach((array,index)=>{
+// out+=array.name   ;
+//  });
+
+//  console.log(out);
+//     },1000)
+
+  
+
+// }
+
+
+// function createdata(data,callback){  
+
+//     setTimeout(()=>{
+      
+//   datas.push(data);
+//   callback(datas);
+
+//     },2000)
+
+   
+// };
+
+// createdata({name:"Chawal",Professional:"Software Engineer"},getData)
+
+
+
+//------------------------------------------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+function getData(dat){
+dat.forEach((value,index)=>{
+    console.log(value);
+})
+}
+
+
+function createData(data){
+
+  return new Promise((resolve,reject)=>{
+    datas.push(data);
+    console.log("successfully Push ");
+
+    setTimeout(()=>{
+      resolve(datas);
+    },2000)
+  })
+
+}
+
+async function show(){
+    const result=await createData({name:"Naseem",Professional:"Software Engineer"});
+    getData(result);
+  
+}
+
+
+
+show();
+
+
+//------------------------------------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+// async function myDisplay() {
+//   let myPromise = new Promise(function(resolve) {
+//       setTimeout(()=>{
+//       resolve("Yes Resolved");
+//       },1000);
+// })
+
+// const a = await myPromise;
+// console.log(a);
+
+// console.log("chal gya");
+
+// }
+
+// myDisplay()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </script>
+
+</body>
+</html>
