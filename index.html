@@ -10,14 +10,14 @@
  
     <script>
      
-//  async function myFunction() {
-    //return "Hello";
-//}
+ async function myFunction() {
+    return "Hello";
+}
 
-// setTimeout(async()=>{
-//     const a=await myFunction();
-//     console.log("Yes");
-// },2000)
+setTimeout(async()=>{
+    const a=await myFunction();
+    console.log("Yes");
+},2000)
 
 
 //----------------------------------------------------------------------//
@@ -29,43 +29,43 @@
 
 
 
-// const datas=[
-//     {name:"Bilawal",Professional:"Software Engineer"},
+const datas=[
+    {name:"Bilawal",Professional:"Software Engineer"},
 
-//     {name:"Haider",Professional:"Software Engineer"}
-// ]
+    {name:"Haider",Professional:"Software Engineer"}
+]
 
 
 
-// const getData=(datas)=>{
-//     let out="";
-//     setTimeout(()=>{
+const getData=(datas)=>{
+    let out="";
+    setTimeout(()=>{
     
-//  datas.forEach((array,index)=>{
-// out+=array.name   ;
-//  });
+ datas.forEach((array,index)=>{
+out+=array.name   ;
+ });
 
-//  console.log(out);
-//     },1000)
+ console.log(out);
+    },1000)
 
   
 
-// }
+}
 
 
-// function createdata(data,callback){  
+function createdata(data,callback){  
 
-//     setTimeout(()=>{
+    setTimeout(()=>{
       
-//   datas.push(data);
-//   callback(datas);
+  datas.push(data);
+  callback(datas);
 
-//     },2000)
+    },2000)
 
    
-// };
+};
 
-// createdata({name:"Chawal",Professional:"Software Engineer"},getData)
+createdata({name:"Chawal",Professional:"Software Engineer"},getData)
 
 
 
@@ -127,21 +127,21 @@ show();
 
 
 
-// async function myDisplay() {
-//   let myPromise = new Promise(function(resolve) {
-//       setTimeout(()=>{
-//       resolve("Yes Resolved");
-//       },1000);
-// })
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve) {
+      setTimeout(()=>{
+      resolve("Yes Resolved");
+      },1000);
+})
 
-// const a = await myPromise;
-// console.log(a);
+const a = await myPromise;
+console.log(a);
 
-// console.log("chal gya");
+console.log("chal gya");
 
-// }
+}
 
-// myDisplay()
+myDisplay()
 
 
 
